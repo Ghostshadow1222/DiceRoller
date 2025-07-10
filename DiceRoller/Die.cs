@@ -32,4 +32,23 @@ public class Die
     /// Gets the number of sides of the die.
     /// </summary>
     public byte NumberOfSides { get; private set; }
+
+    /// <summary>
+    /// Gets the current value being displayed after a roll.
+    /// </summary>
+    public byte ShowingValue { get; private set; }
+
+    /// <summary>
+    /// Simulates rolling the die and returns the resulting value.
+    /// </summary>
+    /// <remarks>The result is a random number between 1 and the number of sides on the die,
+    /// inclusive.</remarks>
+    /// <returns>A byte representing the value rolled, ranging from 1 to the number of sides on the die.</returns>
+    public byte Roll()
+    {
+        Random rand = new();
+        ShowingValue = Convert.ToByte(rand.Next(1, NumberOfSides + 1));
+
+        return ShowingValue;
+    }
 }
