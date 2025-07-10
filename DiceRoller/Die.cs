@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DiceRoller;
+﻿namespace DiceRoller;
 
 /// <summary>
 /// Represents a die used in games or simulations, with a configurable number of sides.
