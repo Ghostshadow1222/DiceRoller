@@ -18,6 +18,7 @@ public class Die
     /// Initializes a new instance of the <see cref="Die"/> class with the specified number of sides.
     /// </summary>
     /// <param name="numSides">The number of sides on the die. Must be greater than zero.</param>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when invalid number of sides is entered</exception>
     public Die(byte numSides) 
     {
         if (numSides == 0 || numSides > 20)
